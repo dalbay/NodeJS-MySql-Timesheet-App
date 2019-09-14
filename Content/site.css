@@ -77,6 +77,15 @@ nav a{
     float: left;   
 }
 
+.imgAmblem>img{ 
+    max-width: 100%;
+    height: auto;
+    margin: 50px 10px;
+ }
+ h3{
+     padding-top: 50px;
+ }
+
 /* Bootstrap styles */
 .container main {
     padding: 0 1em;
@@ -96,6 +105,11 @@ label {
 footer {
     border-top: 1px solid rebeccapurple;
     margin-right: 1em;
+    background-image: url(/Images/atcFooter.png);
+width: auto;
+background-size: contain;
+background-repeat: no-repeat;
+height: 200px;
 }
 footer p {
     font-size: 80%;
