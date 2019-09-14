@@ -16,7 +16,7 @@ Here are the main four functionalities for the application:
 ![General Overview](/Images/screenArch1.png)
 
 #### Workflow 
-Navigating through the models is accomplished by clicking on the "a" tag residing inside the navigation. Each screen has an Exit Button on the bottom right corner which takes a user back to the welcome page. The Logout button will also lead you back to the welcome screen; additionally, it will clear the Session for the particular user.
+Navigating through the models is accomplished by clicking on the ```<a>``` tag residing inside the navigation. Each screen has an Exit Button on the bottom right corner which takes a user back to the welcome page. The Logout button will also lead you back to the welcome screen; additionally, it will clear the Session for the particular user.
 Here is the Workflow Overview for each page:
 - Personal Info - Disabled Text-Boxes will display personal data. The Update button will enable Text-Fields for data to be modified. The Save button will save all changes to the database. The Sign Up page will automatically direct the user to this page.
 - Create New Time-sheet - Text-Boxes are collecting the data. The Save button saves the input to the database. The Date, Time-In, and Time-out text box imply date/time picker controls. Break Period is a dropdown menu with 15-minute increments; Pay Period is a dropdown with months value, and Course is dropdown with available courses to sign up.
