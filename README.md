@@ -1,6 +1,7 @@
 # NodeJS-MySql-Timesheet-App
 Simple Register/Time-sheet app using Node.js and MySQL
 
+
 ### Application Overview - Development Process - Coding Modules
  
 #### Architecture
@@ -10,4 +11,8 @@ Here are the main four functionalities for the application:
 - Create a New Time Sheet - User creates a time-sheet.
 - Current Period Time Sheet - Current Time Sheet will be displayed; functionality to update each field will also be available.
 - Previous Period Time Sheet - Previously Saved Time-sheet will be displayed; a dropdown list to recall older time-sheets will be available.
+
+
+### Welcome Page:
+![Welcome Page](/Images/screen1.png)
 
