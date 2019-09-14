@@ -12,6 +12,8 @@ Here are the main four functionalities for the application:
 - Current Period Time Sheet - Current Time Sheet will be displayed; functionality to update each field will also be available.
 - Previous Period Time Sheet - Previously Saved Time-sheet will be displayed; a dropdown list to recall older time-sheets will be available.
 
+##### Architecture General Overview:
+![General Overview](/Images/screenArch1.png)
 
 ### Welcome Page:
 ![Welcome Page](/Images/screen1.png)
