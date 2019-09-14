@@ -1,0 +1,96 @@
+﻿
+body{
+    background-color: #F1F1F1;
+}
+img#logo{
+    width: 282px;
+    height: 282px;
+    object-fit:fit;
+    z-index: 0;
+}
+div h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+div span{
+    float: right;
+}
+header div input{
+    height: 35px;
+    width: 90px;
+    background-color: #005935;
+    border-color: #F1F1F1;
+    border-radius: 5px;
+    border-width: 1px;
+    box-shadow: 3px 3px #CCCCCC;
+    margin: 2px;
+   color: #F1F1F1;
+}
+header div input:hover{
+    height: 35px;
+    width: 90px;
+    background-color: #3a8668;
+    border-color: rgb(17, 11, 11);
+    border-radius: 5px;
+    border-width: 1px;
+    box-shadow: 3px 3px #CCCCCC;
+    margin: 2px;
+    color: #F1F1F1;
+}
+nav{
+    z-index: 1;
+    margin-top: 5px;
+    height: auto;
+    width: 100%;
+    background-color: #005935;
+    font-weight: bold;
+    font-size: 18px;
+    display: inline-block;
+}
+ nav span{
+    height: 40px;
+    margin: 60px 0px 2px 40px;
+    position: relative;
+    width: auto;
+    padding: 9px 10px;
+}
+nav span:hover{
+    background-color:rgb(58,134,104,.4);
+    border-color: rgb(17, 11, 11);
+    border-radius: 5px;
+    border-width: 1px; 
+    color: #F1F1F1;   
+}
+nav a{
+    color: #F1F1F1;
+    float: left;   
+}
+
+/* Bootstrap styles */
+.container main {
+    padding: 0 1em;
+}
+.btn-primary {
+    border-color: darkslateblue;
+    background-color: rebeccapurple;
+}
+.btn-primary:hover, .btn-primary:focus {
+    background-color: darkslateblue;
+}
+label {
+    font-weight: normal;
+}
+
+/* Other styles */
+footer {
+    border-top: 1px solid rebeccapurple;
+    margin-right: 1em;
+}
+footer p {
+    font-size: 80%;
+    text-align: right;
+}
+.bedtype label { /* Used to correct Bootstrap RadioButton server control style issue*/
+    padding: 0 2em 0 0.5em;
+}
