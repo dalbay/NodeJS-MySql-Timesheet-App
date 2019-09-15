@@ -5,16 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="Scripts/jquery-1.9.1.min.js"></script>
-    <script src="Scripts/bootstrap.min.js"></script>
-    <link href="Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="Content/site.css" rel="stylesheet" />
+    <script src="./Scripts/jquery-1.9.1.min.js"></script>
+    <script src="./Scripts/bootstrap.min.js"></script>
+    <link href="./Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="./Content/site.css" rel="stylesheet" />
     <title>Document</title>
 </head>
 
 <body>
-    <div id="logo"><img src="Images/atcLogo.png" alt="Augusta Technical College Logo" /></div>
-    
+    <div id="logo"><img src="./Images/atcLogo.png" alt="Augusta Technical College Logo" /></div>
     <div class="container">
         <div class="row">
             <header>
@@ -23,7 +22,7 @@
                     <h1>TIME SHEET</h1>
                 </div>
                 <div class="col-sm-12" id="navBtn">
-                    <span><input type="button" id="btnLogin" value="Login"></span>    
+                    <span><input type="button" id="btnLogin" value="Login"></span>
                     <span><input type="button" id="btnSignup" value="Sign Up"></span>
                 </div>
             </header>
@@ -41,7 +40,7 @@
                 <div class="col-sm-12">
 
                     <div class="col-sm-5 imgAmblem">
-                        <img style="height: 225px; width: 500px" src="/Images/atcAmblem.png">
+                        <img style="height: 225px; width: 500px" src="./Images/atcAmblem.png">
                     </div>
 
                     <div class="col-sm-7">
@@ -50,61 +49,72 @@
                 </div>
             </div>
         </main>
-    <!-- ------------ The Login Modal ----------------- -->
-    <div id="loginModal"  class="modal">
-        <!-- Modal content -->
-        <div class="modal-content">
-          <span class="close">&times;</span>
-            <form>
-                <div class="modal-image"><img src="/Images/atcLogo.png"></div>
-                <fieldset> <!--Groups elements in a form-->                    
-                    <ul>
-                        <li class="text">Username</li>
-                        <li><input type="text" name="username" placeholder="Username" ></li>
-                        <li class="text">Password</li>
-                        <li><input type="password" name="password" placeholder="Password"></li>
-                        <span id="spacer">x</span>
-                    </ul>
-                </fieldset>
-            </form>            
-        </div>
-    </div>
-    <!-- ------------ The SignUp Modal ----------------- -->
-    <div id="signupModal" class="modal">
+        <!-- ------------ The Login Modal ----------------- -->
+        <div id="loginModal" class="modal">
             <!-- Modal content -->
             <div class="modal-content">
-              <span class="close">&times;</span>
-            
+                <span id="loginClose" class="close">&times;</span>
                 <form>
-                    <div class="modal-image"><img src="/Images/atcLogo.png"></div>
-                    <fieldset> <!--Groups elements in a form-->                    
-                        <ul>
-                            <li class="text">Firstname</li>
-                            <li><input type="text" name="firstname" placeholder="Firstname" ></li>
-                            <li class="text">Lastname</li>
-                            <li><input type="text" name="lastname" placeholder="Lastname"></li>
-                            <li class="text">Email</li>
-                            <li><input type="email" name="email" placeholder="Email"></li>
-                            <li class="text">Password(6 or more characters)</li>
-                            <li><input type="password" name="password" placeholder="Password"></li>
-                            <li><input type="button" value="Join Now"></li>
-
-                        </ul>
-                    </fieldset>
-                </form> 
-                     
+                    <div class="modal-image"><img src="./Images/atcLogo.png"></div>
+                    <div id="fieldsetBckg">
+                        <fieldset class="row">
+                            <!--Groups elements in a form-->
+                            <ul>
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-10" style="text-align: left">
+                                    <li class="text">Username</li>
+                                    <li><input type="text" name="username" placeholder="Username"></li>
+                                    <li class="text">Password</li>
+                                    <li><input type="text" name="password" placeholder="Password"></li>
+                                    <li class="text" style="color: rgb(185, 179, 179,0.0);">Button</li>
+                                    <li><input class="inputBtn" type="button" value="Login"></li>
+                                    <span id="spacer">x</span>
+                                </div>
+                                <div class="col-sm-1"></div>
+                            </ul>
+                        </fieldset>
+                    </div>
+                </form>
             </div>
         </div>
-
-    <!--link to an external javascript file-->
-    <script src="/Scripts/app.js"></script>
+        <!-- ------------ The SignUp Modal ----------------- -->
+        <div id="signupModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span id="signupClose" class="close">&times;</span>
+                <form>
+                    <div class="modal-image"><img src="./Images/atcLogo.png"></div>
+                    <div id="fieldsetBckg">
+                        <fieldset class="row">
+                            <!--Groups elements in a form-->
+                            <ul>
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-10" style="text-align: left">
+                                    <li class="text">Firstname</li>
+                                    <li><input type="text" name="firstname" placeholder="Firstname"></li>
+                                    <li class="text">Lastname</li>
+                                    <li><input type="text" name="lastname" placeholder="Lastname"></li>
+                                    <li class="text">Email</li>
+                                    <li><input type="email" name="email" placeholder="Email"></li>
+                                    <li class="text">Password(6 or more characters)</li>
+                                    <li><input type="password" name="password" placeholder="Password"></li>
+                                    <li class="text" style="color: rgb(185, 179, 179,0.0);">Button</li>
+                                    <li><input class="inputBtn" type="button" value="Join Now"></li>
+                                </div>
+                                <div class="col-sm-1"></div>
+                            </ul>
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--link to an external javascript file-->
+        <script src="./Scripts/app.js"></script>
         <footer>
             <p>&copy;
                 <!-- label (lblyear)-->
                 Royal Inns and Suites</p>
         </footer>
     </div>
-    
 </body>
-
 </html>
