@@ -42,7 +42,13 @@ Here is the Workflow Overview for each page:
 
 ### Front-end Design Idea - CSS and JavaScript Modal Box
 *A modal is a dialog box/popup window that is displayed on top of the current page.*
+*Create A Modal*
+- The w3-modal class defines a container for a modal.
+- The w3-modal-content class defines the modal content.
+Modal content can be any HTML element (divs, headings, paragraphs, images, etc.).
+- [link to w3schools!](https://www.w3schools.com/w3css/w3css_modal.asp)
 
+*Example*
 ![Modal Example](/Images/modalImg.png)
 ##### index.html file
 ```HTML
