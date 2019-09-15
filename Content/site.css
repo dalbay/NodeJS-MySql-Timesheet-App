@@ -1,192 +1,173 @@
-﻿
-body{
-    background-color: #F1F1F1;    
+﻿body {
+  background-color: #f1f1f1;
 }
-body div#logo{
-    max-width: 100%;
-    height: auto; 
-    
-     z-index: 1;
-
-
+header{text-align: center;}
+header div#logo {
+  max-width: 100%; 
 }
-div#logo>img{
-
-    /* padding: 60px 10px 10px 5px; -- mobile screen*/
-    padding-left: 60px;
-    height: 200px;
-    position: absolute;
-    display: block;
-}
-div h1{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    text-align: center;
-}
-div span{
-    float: right;
-}
-header div input{
-    height: 35px;
-    width: 90px;
-    background-color: #005935;
-    border-color: #F1F1F1;
-    border-radius: 5px;
-    border-width: 1px;
-    box-shadow: 3px 3px #CCCCCC;
-    margin: 2px;
-   color: #F1F1F1;
-}
-header div input:hover{
-    height: 35px;
-    width: 90px;
-    background-color: #3a8668;
-    border-color: rgb(17, 11, 11);
-    border-radius: 5px;
-    border-width: 1px;
-    box-shadow: 3px 3px #CCCCCC;
-    margin: 2px;
-    color: #F1F1F1;
-}
-nav{
-    z-index: 1;
-    margin-top: 5px;
-    height: auto;
-    width: 100%;
-    background-color: #005935;
-    font-weight: bold;
-    font-size: 18px;
-    display: inline-block;
-}
- nav span{
-    height: 40px;
-    margin: 60px 0px 2px 40px;
-    position: relative;
-    width: auto;
-    padding: 9px 10px;
-}
-nav span:hover{
-    background-color:rgb(58,134,104,.4);
-    border-color: rgb(17, 11, 11);
-    border-radius: 5px;
-    border-width: 1px; 
-    color: #F1F1F1;   
-}
-nav a{
-    color: #F1F1F1;
-    float: left;   
+header div#logo > img {
+  height: 150px;  
 }
 
-.imgAmblem>img{ 
-    max-width: 100%;
-    height: auto;
-    margin: 50px 10px;
- }
- h3{
-     padding-top: 50px;
- }
+header div input {
+  display: inline-block;
+  height: 25px;
+  width: 70px;
+  background-color: #005935;
+  border-color: #f1f1f1;
+  border-radius: 5px;
+  border-width: 1px;
+  box-shadow: 2px 2px #cccccc;
+  margin: 1px;
+  color: #f1f1f1;
+}
+header div input:hover {
+  height: 25px;
+  width: 70px;
+  background-color: #3a8668;
+  border-color: rgb(17, 11, 11);
+  border-radius: 5px;
+  border-width: 1px;
+  box-shadow: 2px 2px #cccccc;
+  margin: 2px;
+  color: #f1f1f1;
+}
+/* ----- Navigation ----- */
+nav {
+  margin-top: 5px;
+  background-color: #005935;
+  font-size: 16px;
+  text-align: center;  
+}
+nav span {
+display: block;
+  border: 1px solid rgb(58, 134, 104, 0.4);
+  padding:5px 0px;
+  margin: 5px 0px;
+}
+nav span:hover {
+  background-color: rgb(58, 134, 104, 0.4);
+  border-color: rgb(17, 11, 11);
+  border-radius: 5px;
+  border-width: 1px;
+  color: #f1f1f1;
+}
+nav a {
+  color: #f1f1f1;
+
+}
+
+.imgAmblem > img {
+  max-width: 100%;
+  height: auto;
+  margin: 50px 10px;
+}
+
+h3 {
+  padding-top: 50px;
+}
 
 /* Bootstrap styles */
 .container main {
-    padding: 0 1em;
+  padding: 0 1em;
 }
 .btn-primary {
-    border-color: darkslateblue;
-    background-color: rebeccapurple;
+  border-color: darkslateblue;
+  background-color: rebeccapurple;
 }
-.btn-primary:hover, .btn-primary:focus {
-    background-color: darkslateblue;
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: darkslateblue;
 }
 label {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 /* Other styles */
 footer {
-    border-top: 1px solid rebeccapurple;
-    margin-right: 1em;
-    background-image: url(../Images/atcFooter.png);
-width: auto;
-background-size: contain;
-background-repeat: no-repeat;
-height: 200px;
+  border-top: 1px solid rebeccapurple;
+  margin-right: 1em;
+  background-image: url(../Images/atcFooter.png);
+  width: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 200px;
 }
 footer p {
-    font-size: 80%;
-    text-align: right;
+  font-size: 80%;
+  text-align: right;
 }
-.bedtype label { /* Used to correct Bootstrap RadioButton server control style issue*/
-    padding: 0 2em 0 0.5em;
+.bedtype label {
+  /* Used to correct Bootstrap RadioButton server control style issue*/
+  padding: 0 2em 0 0.5em;
 }
 
-
-/* The Modal (background) */
+/* The Modal */
 
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}  
-  /* Modal Content */
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+/* Modal Content */
 .modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    border: 1px solid #888;
-    width: 60%;
+  background-color: #fefefe;
+  margin: auto;
+  border: 1px solid #888;
+  width: 60%;
 }
-.modal-content span.close{
-    padding: 10px;
+.modal-content span.close {
+  padding: 10px;
 }
-.modal-content form{
-    text-align: center;
-    margin: 50px;
+.modal-content form {
+  text-align: center;
+  margin: 50px;
 }
-.modal-content form #fieldsetBckg{
-    display:inline-block;
-    background-color: #efefef;
-    line-height: 11px;
+.modal-content form #fieldsetBckg {
+  display: inline-block;
+  background-color: #efefef;
+  line-height: 11px;
 }
 .modal-image img {
-      width: 110px;
-      height: 110px;  
+  width: 110px;
+  height: 110px;
 }
-.modal-content span#spacer{
-    color: #fefefe;
-    margin: 20px 0px;
+.modal-content span#spacer {
+  color: #fefefe;
+  margin: 20px 0px;
 }
-.modal-content fieldset{
-      border:none;
-      padding:30px 0px;
+.modal-content fieldset {
+  border: none;
+  padding: 30px 0px;
 }
-.modal-content ul{
-    list-style:none;
-    padding-left: 3px;
+.modal-content ul {
+  list-style: none;
+  padding-left: 3px;
 }
-.modal-content ul li input{
-
-    padding-left: 10px;
-    font-size: 8px;
-    border-radius: 3px;
-    border: 1px solid rgb(188, 188, 188);
-    width: 150px;
-    height: 20px;
+.modal-content ul li input {
+  padding-left: 10px;
+  font-size: 8px;
+  border-radius: 3px;
+  border: 1px solid rgb(188, 188, 188);
+  width: 150px;
+  height: 20px;
 }
-.modal-content ul li.text{
-    font-weight: bold;
-    font-size: 9px;
-    margin-top: 10px;
+.modal-content ul li.text {
+  font-weight: bold;
+  font-size: 9px;
+  margin-top: 10px;
 }
-.inputBtn{
-    background-color: #005935;
-    color: #F1F1F1;
-    font-size: 12px;
-    font-weight: bold;
-} 
+.inputBtn {
+  background-color: #005935;
+  color: #f1f1f1;
+  font-size: 12px;
+  font-weight: bold;
+}
