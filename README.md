@@ -40,3 +40,125 @@ Here is the Workflow Overview for each page:
 ##### Previous Period Time-Sheets Page:
 ![Previous time sheet Page](/Images/screen7.png)
 
+### Front-end Design Idea - CSS and JavaScript Modal Box
+![Modal Example](/Images/modalImg.png)
+```HTML
+        <!-- ------------ The SignUp Modal ----------------- -->
+        <div id="signupModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span id="signupClose" class="close">&times;</span>
+                <form>
+                    <div class="modal-image"><img src="./Images/atcLogo.png"></div>
+                    <div id="fieldsetBckg">
+                        <fieldset class="row">
+                            <!--Groups elements in a form-->
+                            <ul>
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-10" style="text-align: left">
+                                    <li class="text">Firstname</li>
+                                    <li><input type="text" name="firstname" placeholder="Firstname"></li>
+                                    <li class="text">Lastname</li>
+                                    <li><input type="text" name="lastname" placeholder="Lastname"></li>
+                                    <li class="text">Email</li>
+                                    <li><input type="email" name="email" placeholder="Email"></li>
+                                    <li class="text">Password(6 or more characters)</li>
+                                    <li><input type="password" name="password" placeholder="Password"></li>
+                                    <li class="text" style="color: rgb(185, 179, 179,0.0);">Button</li>
+                                    <li><input class="inputBtn" type="button" value="Join Now"></li>
+                                </div>
+                                <div class="col-sm-1"></div>
+                            </ul>
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
+        </div>
+```
+``` css
+/* The Modal */
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  border: 1px solid #888;
+  width: 60%;
+}
+.modal-content span.close {
+  padding: 10px;
+}
+.modal-content form {
+  text-align: center;
+  margin: 50px;
+}
+.modal-content form #fieldsetBckg {
+  display: inline-block;
+  background-color: #efefef;
+  line-height: 11px;
+}
+.modal-image img {
+  width: 110px;
+  height: 110px;
+}
+.modal-content span#spacer {
+  color: #fefefe;
+  margin: 20px 0px;
+}
+.modal-content fieldset {
+  border: none;
+  padding: 30px 0px;
+}
+.modal-content ul {
+  list-style: none;
+  padding-left: 3px;
+}
+.modal-content ul li input {
+  padding-left: 10px;
+  font-size: 8px;
+  border-radius: 3px;
+  border: 1px solid rgb(188, 188, 188);
+  width: 150px;
+  height: 20px;
+}
+.modal-content ul li.text {
+  font-weight: bold;
+  font-size: 9px;
+  margin-top: 10px;
+}
+.inputBtn {
+  background-color: #005935;
+  color: #f1f1f1;
+  font-size: 12px;
+  font-weight: bold;
+}
+```
+``` JavaScript
+/*Login button - Displays Login Modal*/
+var btnLogin = document.getElementById("btnLogin").addEventListener('click',function(){modalLogin.style.display='block'});
+var modalLogin = document.getElementById("loginModal");
+
+/*SignUp button - Displays Signup Modal */
+var modalSignup = document.getElementById("signupModal");
+var btnSignup = document.getElementById("btnSignup").addEventListener('click',function(){modalSignup.style.display='block'});
+
+/*Hide the Modal*/
+document.getElementById('loginClose').addEventListener('click',()=>{modalLogin.style.display='none'});
+document.getElementById('signupClose').addEventListener('click',()=>{modalSignup.style.display='none'});
+```
+
+
+
