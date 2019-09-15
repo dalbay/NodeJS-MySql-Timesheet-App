@@ -171,3 +171,13 @@ footer p {
   font-size: 12px;
   font-weight: bold;
 }
+
+/* Content */
+.main-content{
+  background-color: white;
+  border: 1px solid #005935;
+  border-radius: 3px;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}
