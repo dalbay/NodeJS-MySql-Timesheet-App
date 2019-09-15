@@ -187,3 +187,97 @@ document.getElementById('signupClose').addEventListener('click',()=>{modalSignup
 ##### Example:
 ![Bootstrap Grid System Example](/Images/bootstrapImg.png)
 ##### index.html file
+
+``` HTML
+            <!-- Content here -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="main-content">
+
+                        <!-- First Row -->
+                        <div class="row">
+                            <!-- Left Section -->
+                            <div class="col-sm-6">
+                                <div class="row main-content-row">
+                                    <span>First Name</span><br/>
+                                <input class="main-content-input" type="text" placeholder="Firstname" name="firstname">    
+                                </div>
+                            </div>
+                            <!-- Right Section -->
+                            <div class="col-sm-6">
+                                <!-- First Row -->
+                                <div class="row main-content-row">
+                                    <span>Last Name</span><br/>
+                                    <input class="main-content-input" type="text" placeholder="Lastname" name="lastname">
+                                </div>
+                            </div>
+                     </div>
+                    <!-- Second Row -->
+                     <div class="row">
+                            <!-- Left Section -->
+                            <div class="col-sm-6">
+                                <div class="row main-content-row">
+                                    <span>Employee ID</span><br/>
+                                <input class="main-content-input" type="text" placeholder="Employee Id" name="employeeId">    
+                                </div>
+                            </div>
+                            <!-- Right Section -->
+                            <div class="col-sm-6">
+                                <div class="row main-content-row">
+                                    <span>Job Title</span><br/>
+                                    <input class="main-content-input" type="text" placeholder="Job Title" name="jobTitle">
+                                </div>
+                            </div>
+                     </div>
+                    <!-- Third Row -->
+                     <div class="row">
+                            <!-- Left Section -->
+                            <div class="col-sm-6">
+                                <div class="row main-content-row">
+                                    <span>Email</span><br/>
+                                <input class="main-content-input" type="email" placeholder="Email" name="email">    
+                                </div>
+                            </div>
+                            <!-- Right Section -->
+                            <div class="col-sm-6">
+                                <div class="row main-content-row">
+                                    <span>Department</span><br/>
+                                    <input class="main-content-input" type="text" placeholder="Department" name="department">
+                                </div>
+                            </div>
+                     </div>
+
+                    </div>
+                </div>
+            </div>
+```
+##### style.css file
+``` CSS
+		/* Content */
+		.main-content{
+		  background-color: #cccccc;
+		  border: 1px solid #005935;
+		  border-radius: 3px;
+		  margin: 30px 60px 30px;
+		  text-align: center;
+		  font-weight: bold;
+		  color: #005935;
+		  padding-bottom: 50px;
+		  padding-top: 20px;
+		}
+		.main-content-row{
+		  display: inline-block;
+		  text-align: left;
+		  padding-top: 20px;
+		}
+		.main-content-input{
+		  background-color: white;
+		  border: 1px solid #005935;
+		  border-radius: 3px;
+		  padding: 5px 0px 5px 10px;
+		  font-weight: normal;
+		  font-size: 10px;
+		  width: 200px;
+		}
+
+```
