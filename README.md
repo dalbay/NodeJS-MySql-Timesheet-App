@@ -172,4 +172,18 @@ document.getElementById('signupClose').addEventListener('click',()=>{modalSignup
 ```
 
 
+### Front-end Design Idea - Bootstrap Grid System
+*Bootstrap's grid system is responsive, and the columns will re-arrange depending on the screen size*
+###### Create A Grid System & Rules:
+- Rows must be placed within a .container (fixed-width) or .container-fluid (full-width) for proper alignment and padding
+- Use rows to create horizontal groups of columns
+- Content should be placed within columns
+- Predefined classes like .row and .col-sm-4 are available for quickly making grid layouts
+- Columns create gutters (gaps between column content) via padding. That padding is offset in rows for the first and last column via negative margin on .rows
+- Grid columns are created by specifying the number of 12 available columns you wish to span
+- Column widths are in percentage, so they are always fluid and sized relative to their parent element
+- [link to w3schools!](https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp)
 
+##### Example:
+![Bootstrap Grid System Example](/Images/bootstrapImg.png)
+##### index.html file
