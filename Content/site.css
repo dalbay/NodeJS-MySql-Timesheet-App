@@ -118,3 +118,66 @@ footer p {
 .bedtype label { /* Used to correct Bootstrap RadioButton server control style issue*/
     padding: 0 2em 0 0.5em;
 }
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}  
+  /* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    border: 1px solid #888;
+    width: 60%;
+}
+.modal-content span.close{
+    padding: 10px;
+}
+.modal-content form{
+    text-align: center;
+    margin: 50px;
+
+}
+.modal-image img {
+      width: 110px;
+      height: 110px;  
+      margin-left: 10px; 
+}
+.modal-content span#spacer{
+    color: #fefefe;
+    margin: 50px 0px;
+}
+.modal-content fieldset{
+      border:none;
+}
+.modal-content ul{
+    list-style:none;
+    padding-left: 0px;
+}
+.modal-content ul li input{
+margin-top: 0px;
+    padding-left: 10px;
+    font-size: 8px;
+    border-radius: 3px;
+    border: 1px solid rgb(188, 188, 188);
+    width: 150px;
+    height: 20px;
+}
+.modal-content ul li.text{
+    font-weight: bold;
+    font-size: 10px;
+    margin-top: 10px;
+
+}

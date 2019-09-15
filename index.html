@@ -22,9 +22,9 @@
                     <h1>AUGUSTA TECHNICAL COLLEGE</h1>
                     <h1>TIME SHEET</h1>
                 </div>
-                <div class="col-sm-12">
-                    <span><input type="button" value="Login"></span>    
-                    <span><input type="button" value="Sign Up"></span>
+                <div class="col-sm-12" id="navBtn">
+                    <span><input type="button" id="btnLogin" value="Login"></span>    
+                    <span><input type="button" id="btnSignup" value="Sign Up"></span>
                 </div>
             </header>
         </div>
@@ -50,12 +50,61 @@
                 </div>
             </div>
         </main>
+    <!-- ------------ The Login Modal ----------------- -->
+    <div id="loginModal"  class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+            <form>
+                <div class="modal-image"><img src="/Images/atcLogo.png"></div>
+                <fieldset> <!--Groups elements in a form-->                    
+                    <ul>
+                        <li class="text">Username</li>
+                        <li><input type="text" name="username" placeholder="Username" ></li>
+                        <li class="text">Password</li>
+                        <li><input type="password" name="password" placeholder="Password"></li>
+                        <span id="spacer">x</span>
+                    </ul>
+                </fieldset>
+            </form>            
+        </div>
+    </div>
+    <!-- ------------ The SignUp Modal ----------------- -->
+    <div id="signupModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+            
+                <form>
+                    <div class="modal-image"><img src="/Images/atcLogo.png"></div>
+                    <fieldset> <!--Groups elements in a form-->                    
+                        <ul>
+                            <li class="text">Firstname</li>
+                            <li><input type="text" name="firstname" placeholder="Firstname" ></li>
+                            <li class="text">Lastname</li>
+                            <li><input type="text" name="lastname" placeholder="Lastname"></li>
+                            <li class="text">Email</li>
+                            <li><input type="email" name="email" placeholder="Email"></li>
+                            <li class="text">Password(6 or more characters)</li>
+                            <li><input type="password" name="password" placeholder="Password"></li>
+                            <li><input type="button" value="Join Now"></li>
+
+                        </ul>
+                    </fieldset>
+                </form> 
+                     
+            </div>
+        </div>
+
+    <!--link to an external javascript file-->
+    <script src="/Scripts/app.js"></script>
         <footer>
             <p>&copy;
                 <!-- label (lblyear)-->
                 Royal Inns and Suites</p>
         </footer>
     </div>
+    
 </body>
 
 </html>
