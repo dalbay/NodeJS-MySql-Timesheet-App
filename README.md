@@ -41,6 +41,8 @@ Here is the Workflow Overview for each page:
 ![Previous time sheet Page](/Images/screen7.png)
 
 ### Front-end Design Idea - CSS and JavaScript Modal Box
+*A modal is a dialog box/popup window that is displayed on top of the current page.*
+
 ![Modal Example](/Images/modalImg.png)
 ##### index.html file
 ```HTML
