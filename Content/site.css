@@ -46,8 +46,8 @@ display: block;
   margin: 5px 0px;
 }
 nav span:hover {
-  background-color: rgb(58, 134, 104, 0.4);
-  border-color: rgb(17, 11, 11);
+  background-color: rgba(106, 167, 142, 0.4);
+
   border-radius: 5px;
   border-width: 1px;
   color: #f1f1f1;
