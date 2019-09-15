@@ -29,7 +29,7 @@ header div input:hover {
   border-radius: 5px;
   border-width: 1px;
   box-shadow: 2px 2px #cccccc;
-  margin: 2px;
+  margin: 1px;
   color: #f1f1f1;
 }
 /* ----- Navigation ----- */
@@ -40,21 +40,24 @@ nav {
   text-align: center;  
 }
 nav span {
-display: block;
+  display: block;
   border: 1px solid rgb(58, 134, 104, 0.4);
+  border-radius: 5px;
   padding:5px 0px;
   margin: 5px 0px;
+  color: #f1f1f1;
 }
 nav span:hover {
-  background-color: rgba(106, 167, 142, 0.4);
-
+  display: block;
+  background-color: #3a8668;
+  padding:5px 0px;
+  margin: 5px 0px;
   border-radius: 5px;
   border-width: 1px;
   color: #f1f1f1;
 }
-nav a {
-  color: #f1f1f1;
-
+nav a:hover {
+  text-decoration: none;
 }
 
 .imgAmblem > img {
@@ -66,6 +69,8 @@ nav a {
 h3 {
   padding-top: 50px;
 }
+
+main{ background-color:#dadada}
 
 /* Bootstrap styles */
 .container main {
@@ -86,9 +91,7 @@ label {
 /* Other styles */
 footer {
   border-top: 1px solid rebeccapurple;
-  margin-right: 1em;
   background-image: url(../Images/atcFooter.png);
-  width: auto;
   background-size: contain;
   background-repeat: no-repeat;
   height: 200px;
@@ -174,10 +177,54 @@ footer p {
 
 /* Content */
 .main-content{
+  background-color: #efefef;
+  border: 1px solid #005935;
+  border-radius: 3px;
+  margin: 30px 100px 30px;
+  text-align: center;
+  font-weight: bold;
+  color: #005935;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+.main-content-row{
+  display: inline-block;
+  text-align: left;
+  padding-top: 20px;
+}
+.main-content-input{
   background-color: white;
   border: 1px solid #005935;
   border-radius: 3px;
-  margin-top: 20px;
+  padding: 5px 0px 5px 10px;
+  font-weight: normal;
+  font-size: 10px;
+  width: 200px;
+}
+.main-content-button{
+  background-color: #005935;
+  border: 1px solid #005935;
+  border-radius: 3px;
   text-align: center;
-  font-weight: bold;
+  font-weight: normal;
+  font-size: 10px;
+  width: 90px;
+  height: 25px;
+  color: #efefef;
+}
+.main-content-button:hover{
+  background-color: #3a8668;
+  border-color: rgb(17, 11, 11);
+  border: 1px solid;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 10px;
+  width: 90px;
+  height: 25px;
+  color: #efefef;
+}
+input#btnExit{
+  float: right;
+  margin:30px;
 }
