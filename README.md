@@ -42,8 +42,9 @@ Here is the Workflow Overview for each page:
 
 ### Front-end Design Idea - CSS and JavaScript Modal Box
 ![Modal Example](/Images/modalImg.png)
+##### index.html file
 ```HTML
-        <!-- ------------ The SignUp Modal ----------------- -->
+        <!-- The SignUp Modal -->
         <div id="signupModal" class="modal">
             <!-- Modal content -->
             <div class="modal-content">
@@ -75,6 +76,7 @@ Here is the Workflow Overview for each page:
             </div>
         </div>
 ```
+##### style.css file
 ``` css
 /* The Modal */
 
@@ -146,6 +148,7 @@ Here is the Workflow Overview for each page:
   font-weight: bold;
 }
 ```
+##### app.js file
 ``` JavaScript
 /*Login button - Displays Login Modal*/
 var btnLogin = document.getElementById("btnLogin").addEventListener('click',function(){modalLogin.style.display='block'});
