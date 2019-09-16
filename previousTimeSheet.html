@@ -9,7 +9,7 @@
     <script src="./Scripts/bootstrap.min.js"></script>
     <link href="./Content/bootstrap.min.css" rel="stylesheet" />
     <link href="./Content/site.css" rel="stylesheet" />
-    <title>New Time Sheet</title>
+    <title>Previous Time Sheet</title>
 </head>
 
 <body onload="myFunction()">
@@ -22,7 +22,7 @@
                     <h1>AUGUSTA TECHNICAL COLLEGE TIME-SHEET</h1>
                 </div>
                 <div class="col-sm-2" id="navBtn">
-                    <span><input type="button" id="btnLogout" onclick="redirectToIndex()" value="Logout"></span>
+                    <span><input type="button" onclick="redirectToIndex()" id="btnLogout" value="Logout"></span>
                 </div>
             </header>
         </div>
@@ -32,66 +32,64 @@
                         <a class="col-sm-3" href="personalInfo.html" ><span id="personalInfo">Personal Info</span></a>
                         <a class="col-sm-3" href="newTimeSheet.html"><span id="newTimeSheet">Create New Time Sheet</span></a>
                         <a class="col-sm-3" href="currentTimeSheet.html"><span id="currentTimeSheet">Current Period Time Sheet</span></a>
-                        <a class="col-sm-3" href="previousTimeSheet.html"><span id="pastTimeSheet">Past Period Time Sheets</span></a>
+                        <a class="col-sm-3" href="previousTimeSheet.html"><span id="previousTimeSheet">Past Period Time Sheets</span></a>
                 </nav>
             </div>
 
             <!-- Content here -->
             <div class="row">
+
                 <div class="col-sm-12">
                     <div class="main-content">
+                        <div class="row">
+                                    <div class="col-sm-12">
+                                    <br>
+                                    <select name="DOBMonth">
+                                            <option>- Month -</option>
+                                            <option value="January">January</option>
+                                            <option value="Febuary">Febuary</option>
+                                            <option value="March">March</option>
+                                            <option value="April">April</option>
+                                            <option value="May">May</option>
+                                            <option value="June">June</option>
+                                            <option value="July">July</option>
+                                            <option value="August">August</option>
+                                            <option value="September">September</option>
+                                            <option value="October">October</option>
+                                            <option value="November">November</option>
+                                            <option value="December">December</option>
+                                    </select>
+                                    <select name="DOBYear">
+                                            <option>- Year -</option>
+                                            <option value="2019">2019</option>
+                                            <option value="2018">2018</option>
+                                            <option value="2017">2017</option>
+                                            <option value="2016">2016</option>
+                                    </select>
+                                        <span class="topSpan" id="Pay Period">Pay Period:</span>
+                                    </div>
+                        </div>
                         <!-- First Row -->
                         <div class="row">
                             <div class="col-sm-12">
                                 <!-- Table -->
                                 <form>
                                     <fieldset>
-                                        <ul style="padding-left: 0px;">
+                                        <ul>
                                             <table id="tblNewTimeSheet">
                                                 <tr>
                                                     <th class="col-sm-2">Date</th>
                                                     <th class="col-sm-2">Time-In</th>
                                                     <th class="col-sm-2">Time-Out</th>
                                                     <th class="col-sm-2">Break Period</th>
-                                                    <th class="col-sm-2">Course</th>
+                                                    <th class="col-sm-2">Hours Worked</th>
+                                                    <th class="col-sm-2">Overage</th>
                                                 </tr>
-                                                <tr>
-                                                    <td class="inputRow" id="inputColumnDate">
-                                                        <input type="date" name="date">
-                                                    </td>
-                                                    <td id="inputColumnTimeIn">
-                                                        <input type="time" name="timeIn">
-                                                    </td>
-                                                    <td id="inputColumnTimeOut">
-                                                        <input type="time" name="timeOut">
-                                                    </td>
-                                                    <td id="inputColumnBreak">
-                                                        <select>
-                                                            <option value="0">N/A</option>
-                                                            <option value="15">15 min</option>
-                                                            <option value="30">30 min</option>
-                                                            <option value="45">45 min</option>
-                                                            <option value="60">60 min</option>
-                                                        </select>
-                                                    </td>
-                                                    <td id="inputColumnCourse">
-                                                        <input type="text" placeholder="Ex: CIST1000">
-                                                    </td>
-                                                </tr>
+                                              
                                                 <!--          This is where we insert the data dynamically-->
-                                                <tr>
-                                                    <td id="btnRow" style="background-color: lightgray;" colspan="5">
-                                                        <input type="button" class="main-content-button" id="btnSave"
-                                                            style="float: right;margin:10px;" value="Save"></td>
-                                                </tr>
+
                                                 <tr>
                                                     <td class="newInput">dynamic entry</td>
-                                                    <td class="newInput">dynamic entry</td>
-                                                    <td class="newInput">dynamic entry</td>
-                                                    <td class="newInput">dynamic entry</td>
-                                                    <td class="newInput">dynamic entry</td>
-                                                </tr>
-                                                <tr>
                                                     <td class="newInput">dynamic entry</td>
                                                     <td class="newInput">dynamic entry</td>
                                                     <td class="newInput">dynamic entry</td>
@@ -104,20 +102,28 @@
                                                     <td class="newInput">dynamic entry</td>
                                                     <td class="newInput">dynamic entry</td>
                                                     <td class="newInput">dynamic entry</td>
+                                                    <td class="newInput">dynamic entry</td>
                                                 </tr>
+                                                <tr>
+                                                        <td class="newInput">dynamic entry</td>
+                                                        <td class="newInput">dynamic entry</td>
+                                                        <td class="newInput">dynamic entry</td>
+                                                        <td class="newInput">dynamic entry</td>
+                                                        <td class="newInput">dynamic entry</td>
+                                                        <td class="newInput">dynamic entry</td>
+                                                    </tr>
                                             </table>
                                         </ul>
                                     </fieldset>
                                 </form>
                             </div>
                         </div>
-
                     </div>
                 </div>
                 <!-- Exit Button -->
                 <div class="col-sm-12">
-                    <input type="button" id="btnExit" value="Exit" onclick="redirectToIndex()" class="main-content-button">
-                </div>
+                        <input type="button" id="btnCurrentExit" onclick="redirectToIndex()" value="Exit" class="main-content-current">
+                    </div>
             </div>
 
         </main>
