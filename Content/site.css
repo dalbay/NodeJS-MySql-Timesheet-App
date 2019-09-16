@@ -234,6 +234,7 @@ input#btnExit{
 table#tblNewTimeSheet{
   
   text-align: center;
+  margin-top: 10px;
 }
 td.newInput{
   text-align: center;
@@ -251,3 +252,39 @@ td.newInput{
   color: #cccccc;
 }
 
+span.topSpan{
+  color: #005935;
+  float: left;
+  padding-left: 40px;
+}
+
+/*Current page*/
+.main-content-current{
+  background-color: #005935;
+  border: 1px solid #005935;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 10px;
+  width: 90px;
+  height: 25px;
+  margin-bottom: 10px;
+  color: #efefef;
+  float: right;
+  margin-right: 10px;
+}
+.main-content-current:hover{
+  background-color: #3a8668;
+  border-color: rgb(17, 11, 11);
+  border: 1px solid;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 10px;
+  width: 90px;
+  height: 25px;
+  color: #efefef;
+  float: right;
+  margin-right: 10px;
+  
+}
